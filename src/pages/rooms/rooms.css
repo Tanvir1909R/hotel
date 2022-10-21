@@ -1,0 +1,36 @@
+.roomBanner{
+    background: url(../../../public/img/room-banner.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 14rem 1rem;
+    text-align: center;
+    color: white;
+}
+.roomBanner h1{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+.rooms{
+    margin-top: 5rem;
+}
+.room:hover .roomImg{
+    transform: scale(1.1);
+}
+.roomDesc{
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    color: white;
+}
+.roomImg{
+    -webkit-mask-image: linear-gradient(360deg, black, black);
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

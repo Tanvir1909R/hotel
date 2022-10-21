@@ -1,0 +1,29 @@
+header{
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+.headerActive{
+    background-color: black;
+    color: white;
+    transition: all .3s ease-in-out;
+    
+}
+.headerWrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
