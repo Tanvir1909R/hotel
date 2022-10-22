@@ -29,8 +29,8 @@ const Header = () => {
             <img src="./img/logo.webp" alt="" />
           </div>
           <div className="accountSec">
-            <Button style={{marginRight:"20px"}} variant="outline-info">Login</Button>
-            <Button variant="outline-danger">Register</Button>
+            <Button style={{marginRight:"20px"}} variant="outline-info"><Link to='/login'>Login</Link></Button>
+            <Button variant="outline-danger"><Link to='/register'>Register</Link></Button>
           </div>
         </div>
       </div>

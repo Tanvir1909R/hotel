@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: REACT_APP_apiKey,
-  authDomain: REACT_APP_authDomain,
-  projectId: REACT_APP_projectId,
-  storageBucket: REACT_APP_storageBucket,
-  messagingSenderId: REACT_APP_messagingSenderId,
-  appId: REACT_APP_appId
+  apiKey: "AIzaSyDor_Qm6fsjRI_SzyqFGaD7SuNFspA9_mg",
+  authDomain: "hotel-transylvania-71f3d.firebaseapp.com",
+  projectId: "hotel-transylvania-71f3d",
+  storageBucket: "hotel-transylvania-71f3d.appspot.com",
+  messagingSenderId: "67162103615",
+  appId: "1:67162103615:web:10fa36f36ab1f52b177d8a"
 };
 
 // Initialize Firebase
