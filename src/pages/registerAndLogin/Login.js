@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { authContext } from '../../contexts/UserContext';
 import "./registerAndLogin.css";
 
 const Login = () => {
+  const { logIn } = useContext(authContext)
+  const handleLogin = (e)=>{
+    e.preventDefault();
+    // const userName = e.target.name.value;
+    // const URL = e.target.url.value;
+    const Email = e.target.email.value;
+    const Password = e.target.password.value;
+
+    logIn(Email, Password)
+    .then(res =>console.log(res.user))
+    .catch(e =>console.log(e.message))
+  }
   return (
     <section id="form">
       <div className="registerBanner"></div>
       <div className="Form">
-        <Form>
+        <Form onSubmit={handleLogin}>
+          <h1>Login please</h1>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -27,9 +41,6 @@ const Login = () => {
               required
               name="password"
             />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Terms and condition" />
           </Form.Group>
           <Button variant="primary" type="submit">
             Submit
